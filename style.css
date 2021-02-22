@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Quando", serif;
+  background-color: #2f3038;
+  font-weight: 300;
+  color: white;
+}
+
+html,
+body {
+  height: 100%;
+}
+.container {
+  margin: 10px 20px 0 20px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.leftCorner,
+.rightCorner {
+  width: 100%;
+  font-weight: 700;
+}
+.leftCorner > p > a {
+  cursor: pointer;
+}
+.leftCorner > p {
+  font-size: 33px;
+  font-weight: normal;
+}
+.header .leftCorner {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.leftCorner p,
+.header .rightCorner li {
+  margin: 0 10px 0 10px;
+  list-style-type: none;
+}
+.header .rightCorner {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.landingPage-body {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.landingPage-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.landingPage-right > p:nth-child(1) {
+  font-size: 30px;
+  margin-bottom: 20px;
+  letter-spacing: 2.5px;
+  text-shadow: 5px 3px 6px #070707;
+}
+
+.landingPage-right > p:nth-child(2) {
+  font-size: 19px;
+  margin-bottom: 50px;
+}
+.landingPage-right > p:nth-child(3) > button {
+  padding: 10px;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  background-color: #5141b6;
+  border: none;
+  cursor: pointer;
+}
+/* Landing Page Task is over */
+
+/* Features part we are working currently */
+.featurePage-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: left;
+  /* margin-top: 5rem; */
+  height: 100%;
+}
+.features {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+.features .charts,
+.features .album,
+.features .more {
+  background-color: #404040;
+  margin: 2px;
+  padding: 15px;
+  margin-right: 25px;
+  text-align: center;
+  cursor: pointer;
+}
+.featurePageSubtitle h2 {
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+.featurePageLeft-top {
+  margin-bottom: 4rem;
+}
+.features img {
+  margin-bottom: 10px;
+}
+.footer {
+  background-color: #404040;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-left {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.footer a {
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+}
+.footer a:focus {
+  color: white;
+}
+.footer a:active {
+  color: white;
+}
+.footer a:focus {
+  color: white;
+}
+.footer a:visited {
+  color: white;
+}
