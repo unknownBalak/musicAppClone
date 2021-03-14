@@ -15,23 +15,39 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 40px;
+  flex: 1;
 }
 .full-height-grow {
   display: flex;
   flex-direction: column;
 }
-.header {
+.header,
+.footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 140px;
 }
-.leftCorner,
-.rightCorner {
+.footer > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
+.main-footer1 {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.header {
+  height: 140px;
+}
+.footer {
+  height: 50px;
+  width: 100%;
+  background-color: black;
+}
 a {
-  padding: 20px;
+  margin: 10px;
   text-decoration: none;
   color: white;
   cursor: pointer;
@@ -64,7 +80,8 @@ a:hover {
 .header .rightCorner li {
   list-style-type: none;
 }
-.header .rightCorner {
+.header .rightCorner,
+.footer-right {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -108,11 +125,13 @@ p:nth-child(2) {
   font-size: 19px;
   margin-bottom: 50px;
 }
-p:nth-child(3) > a {
+p:nth-child(3) > a,
+a.btn {
   padding: 15px 30px;
   background-color: #5141b6;
   cursor: pointer;
   color: white;
+  border-radius: 5px;
 }
 @media (max-width: 992px) {
   .home-body .lady-img {
@@ -142,8 +161,8 @@ p:nth-child(3) > a {
   left: 40vw;
 }
 .homeCircularBox3 {
-  width: 45vw;
-  height: 45vw;
+  width: 25vw;
+  height: 25vw;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -161,45 +180,3 @@ p:nth-child(3) > a {
   right: 0;
 }
 /* Landing Page Task is over */
-
-/* Features part we are working currently */
-.featurePage-body {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  text-align: left;
-  height: 100%;
-}
-.features {
-  display: flex;
-  align-items: center;
-}
-.features .charts,
-.features .album,
-.features .more {
-  background-color: #404040;
-  margin: 2px;
-  padding: 15px;
-  margin-right: 25px;
-  text-align: center;
-  cursor: pointer;
-}
-.featurePageSubtitle h2 {
-  margin-bottom: 40px;
-  letter-spacing: 2px;
-}
-.featurePageLeft-top {
-  margin-bottom: 4rem;
-}
-.features img {
-  margin-bottom: 10px;
-}
-.footer {
-  background-color: #404040;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.home-body {
-  justify-content: center;
-}
